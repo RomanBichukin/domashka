@@ -9,9 +9,9 @@ Console.Write("Введите число: ");
 int A = Convert.ToInt32(Console.ReadLine());
 if (A%2 != 0)
 {
-    Console.Write($"{A} является чётным");
+    Console.Write($"{A} является нечётным");
 }
 else
 {
-    Console.Write($"{A} является нечётным");
+    Console.Write($"{A} является чётным");
 }
