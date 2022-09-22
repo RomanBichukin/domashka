@@ -10,7 +10,7 @@ Console.Write("Введите 2-е число:  ");
 int B = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите 3-е число:  ");
 int C = Convert.ToInt32(Console.ReadLine());
-int Max = 0;
+
 
 if(A > C)
 {
