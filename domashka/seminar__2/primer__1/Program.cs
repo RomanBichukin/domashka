@@ -10,9 +10,9 @@ int second = x%10;
 int first = (x - second)/10;
 if (first > second)
 {
-    Console.WriteLine(first);
+    Console.WriteLine("->" + first);
 }
 else
 {
-    Console.WriteLine(second);
+    Console.WriteLine("->" + second);
 }
