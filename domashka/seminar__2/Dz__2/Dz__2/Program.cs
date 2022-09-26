@@ -14,7 +14,7 @@ int A = Convert.ToInt32(Console.ReadLine());
 {
    Console.WriteLine($"{A} -> третьей цифры нет");
 }
-if (A < 1000)
+ else if (A < 1000 && A >99)
 {
    Console.WriteLine($"{A} -> {A%10}");
 }
