@@ -28,11 +28,3 @@ else while (A > 999)
    
    
 }
-/* if (A < 1000)
-{
-   Console.WriteLine($"{A} -> {A%10}");
-} */
-/*  else if (A < 100)
-{
-   Console.WriteLine($"{A} -> третьей цифры нет");
-} */
