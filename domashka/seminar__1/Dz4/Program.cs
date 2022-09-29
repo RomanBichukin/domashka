@@ -13,3 +13,10 @@ int B = 2;
         Console.Write($"{B},");
         B = B + 2;
     }
+/*  или можно так:
+int B = 1;
+while ( B <= A )
+{
+    if (B%2 == 0) Console.Write($"{B} ");
+    B += 2
+} */
