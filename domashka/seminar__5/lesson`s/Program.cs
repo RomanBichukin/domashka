@@ -50,7 +50,53 @@ Console.WriteLine($"Max = {max2}"); */
 //Например, в массиве [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] сумма положительных чисел равна 29,
 // сумма отрицательных равна -20
 //++++++++++
+/* int[] array = new int[12];
+void PrintArray(int[] array)
+{
+    int count = array.Length;
+    for ( int i = 0; i < count; i++)
+    {
+        array[i] = new Random().Next(-9, 9);
+        Console.Write($"{array[i]} ");
+    }
+}
+PrintArray(array);
+int Sum = 0;
+int sum = 0;
+for (int i = 0; i < array.Length; i++)
+{
+        if (array[i] > 0)
+        {
+            Sum = array[i] + Sum;
+                      
+        }
+        
+        
+        if (array[i] < 0)
+        {
+            sum = sum + array[i];            
+        }
+        
+}
+Console.WriteLine();
+Console.WriteLine($"Сумма положительных чисел равна {Sum}");
+Console.WriteLine($"Сумма отрицательных чисел равна {sum}");
+ */
+//--------------------------------------
+//--------------------------------------
 
+/* int[] array = new int[12];
+void PrintArray(int[] array)
+{
+    int count = array.Length;
+    for ( int i = 0; i < count; i++)
+    {
+        array[i] = new Random().Next(-9,9);
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+PrintArray(array); */
 
 
 //========================================================================================
@@ -59,6 +105,21 @@ Console.WriteLine($"Max = {max2}"); */
 //Задача 32: Напишите программу замена элементов массива:
 // положительные элементы замените на соответствующие отрицательные, и наоборот.
 //      [-4, -8, 8, 2] -> [4, 8, -8, -2]
+/* int[] array = new int[6];
+
+    int count = array.Length;
+    for ( int i = 0; i < count; i++)
+    {
+        array[i] = new Random().Next(-9, 9);
+        Console.Write($"{array[i]} ");
+        
+    }Console.WriteLine();
+    for ( int j = 0; j < count; j++)
+        {
+            array[j] = array[j] * (-1);
+            Console.Write($"{array[j]} ");
+        } */
+
 
 
 //========================================================================================
@@ -68,6 +129,48 @@ Console.WriteLine($"Max = {max2}"); */
 // присутствует ли заданное число в массиве.
 //      4; массив [6, 7, 19, 345, 3] -> нет
 //      -3; массив [6, 7, 19, 345, 3] -> да
+/* int[] array = new int[12];
+void PrintArray(int[] array)
+{
+    int count = array.Length;
+    for ( int i = 0; i < count; i++)
+    {
+        array[i] = new Random().Next(10);
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+
+}
+PrintArray(array); */
+/* int[] array = new int[12];
+
+    int count = array.Length;
+    for ( int i = 0; i < count; i++)
+    {
+        array[i] = new Random().Next(10);
+        Console.Write($"{array[i]} ");
+    }
+ Console.WriteLine("Введите число для поиска: ");
+
+   int x = Convert.ToInt32(Console.ReadLine());
+void pint(string res,int[] arr)
+{
+
+    string res = "";
+    for (int i = 0; i < arr.Length; i++)
+    {
+        
+    if (x == arr[i]){res = "Данное число присутствует в массиве";break;}
+    
+    else{res = "Данное число отсутствует в массиве";break;}
+    }
+    
+}
+
+pint(x, array);
+ */
+
+
 
 
 //========================================================================================
